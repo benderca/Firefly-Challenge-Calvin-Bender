@@ -1,0 +1,173 @@
+:root {
+    --body-bg-color: rgb(58, 6, 106);
+    --nav-bg-color: rgb(80, 9, 147);
+    --number-color: rgb(208, 191, 171);
+    --operator-bg-color: rgb(218, 165, 32);
+    --operator-color: rgb(80, 9, 147);
+    --border: 2px solid grey;
+    --main-font: 'Open Sans', sans-serif;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: var(--body-bg-color);
+}
+
+/* Navigation bar styling */
+
+
+.navbar-toggler{
+    background-color: var(--nav-bg-color);
+    height: 10%;
+}
+
+#nav-bg{
+    background-color: var(--nav-bg-color) !important;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    float: left;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: var(--nav-bg-color);
+    color: var(--number-color);
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 2rem;
+    font-family: var(--main-font);
+  }
+  
+/* Add a background color to the button if it is clicked on and when you hover*/
+.active, .collapsible:hover {
+background-color: rgb(204, 204, 204);
+color: black;
+}
+
+/* Style the collapsible content */
+.content {
+padding: 0 18px;
+display: none;
+overflow: hidden;
+background-color: var(--nav-bg-color);
+color: var(--number-color);
+font-family: var(--main-font);
+}
+
+.style-button {
+background-color: var(--nav-bg-color);
+color: var(--number-color);
+font-family: var(--main-font);
+z-index: 1;
+}
+
+/*Calculator buttons section*/
+
+.calculator-grid{
+    width: 300px;
+    height: 80%;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    min-width: fit-content;
+    min-height: fit-content;   
+}
+
+.output{
+    width: 300px;
+    height: 20%;
+    margin: auto;
+    display: inline-flexbox;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#previous-operand, .previous-operand{
+    width: 300px;
+    color: var(--number-color);
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    float: left;
+    
+}
+
+#current-operand, .current-operand{
+    color: var(--number-color);
+    font-size: 3rem;
+    font-family: var(--main-font);
+    float:right;
+}
+
+.row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.top-row {
+    border-top: 1px solid grey;
+    width: 300px;
+}
+
+button { 
+    width: 100%;
+    height: 100%; 
+}
+
+.operatorBtn, .equalsBtn {
+    background-color: var(--operator-bg-color);
+    color: var(--operator-color);
+    border-radius: 50%;
+    font-size: 2rem; 
+    font-family: var(--main-font);
+}
+
+.numeralBtn, .decimalBtn {
+    border: var(--border);
+    color: var(--number-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    font-family: var(--main-font);   
+}
+
+.clearBtn {
+    border: 2px solid var(--operator-bg-color);
+    color: var(--number-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    font-family: var(--main-font);
+}
+
+#zero{
+    border-radius: 25px;
+    font-family: var(--main-font);
+    
+}
+
+#equals{
+    border-radius: 25px;
+    font-family: var(--main-font);
+}
+
+.col-sm-3, .col-sm-4, .col-sm-8 {
+    padding: 1px;
+}
+
+.hamburger-container{
+    height: 20%;
+}
+.dropDown {
+    height: 20%;
+}
+
